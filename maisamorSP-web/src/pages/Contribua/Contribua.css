@@ -1,0 +1,85 @@
+#contribua {
+    background-color: #fff;
+    color: #495057;
+    padding: 60px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.color-pink {
+    color: #FF4081;
+}
+
+.cards-border {
+    border: 2px solid #FF4081;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px;
+    transition: transform 0.3s;
+}
+
+.cards-border:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.custom-btn-pink {
+    background-color: #FF4081;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 30px;
+}
+
+.custom-btn-pink:hover {
+    background-color: #ffc0cb;
+    color: #FF4081;
+    transform: scale(1.1);
+}
+
+.lead-text {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.partner-section {
+    background-color: #f8f8f8;
+    padding: 40px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.partner-text {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.volunteer-section ol {
+    list-style: disc inside;
+    padding-left: 0; 
+}
+
+.volunteer-section li {
+    margin-top: 10px; 
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .h2-bold {
+        font-size: 1.6rem;
+    }
+
+    .custom-btn-pink {
+        font-size: 1.3rem;
+        padding: 10px 20px;
+    }
+
+    .cards-border {
+        margin: 10px;
+    }
+}

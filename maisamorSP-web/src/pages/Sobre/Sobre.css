@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+.section-title, .section-subtitle {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(to right, #FF4081, #FFC0CB); /* Ajuste para usar as cores da paleta definida */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.section-subtitle {
+    font-size: 20px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.timeline-image {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.timeline-text {
+    flex-grow: 1;
+    font-family: 'Poppins', sans-serif;
+}
+
+.custom-btn {
+    background-color: #FF4081;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: 'Nunito', sans-serif;
+    transition: background-color 0.3s, transform 0.3s;
+
+    &:hover {
+        background-color: #FFC0CB;
+        color: #FF4081;
+        transform: scale(1.05);
+    }
+}
+
+.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline-item {
+      flex-direction: column; /* Altera a direção do flex para coluna em dispositivos móveis */
+      align-items: center; /* Centraliza os itens na direção da coluna */
+      text-align: center; /* Certifica-se de que o texto também está centralizado */
+    }
+  
+    .timeline-image {
+      margin-right: 0; /* Remove a margem direita, pois não é mais necessária */
+      margin-bottom: 20px; /* Adiciona uma margem inferior para espaçar a imagem do texto abaixo */
+      width: 300px; /* Opcional: Ajusta o tamanho da imagem para dispositivos móveis */
+      height: 300px; /* Opcional: Ajusta o tamanho da imagem para dispositivos móveis */
+    }
+}

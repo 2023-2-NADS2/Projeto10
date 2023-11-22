@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+.intro-text {
+    position: relative;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    z-index: 10;
+    margin: 0 auto;
+    color: white;
+}
+
+.intro-text h1,
+.intro-text p {
+    background: linear-gradient(to right, #ffffff, #ffc0cb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.intro-text h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0.5em 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.intro-text p {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 10px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.parallax-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+
+.parallax-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(254, 1, 128, 0.4);
+    backdrop-filter: blur(4.5px);
+}
+
+@media (max-width: 768px) {
+    .parallax-content {
+        height: auto;
+    }
+
+    .intro-text h1,
+    .intro-text p {
+        color: white;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+    }
+}
+
+@media (max-width: 480px) {
+
+    #intro {
+        background-image: url('./Intro.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .intro-text h1,
+    .intro-text p {
+        font-size: 2rem;
+        margin: 0;
+        text-shadow: none;
+    }
+
+    .parallax-content::before {
+        display: none;
+    }
+
+    .parallax-content {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+}
