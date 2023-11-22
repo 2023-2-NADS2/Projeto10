@@ -88,7 +88,7 @@ A estrutura de pastas do projeto está organizada para separar claramente os com
   - `pages`: Contém subdiretórios para as diferentes páginas do site:
     - `Contato`: Página de contato para interações com os usuários.
     - `Contribua`: Página que permite contribuições ou doações.
-    - `DesejosDePapel`: Página que pode estar relacionada a pedidos ou desejos específicos dos usuários.
+    - `SONHOS`: Página que pode estar relacionada a pedidos ou desejos específicos dos usuários.
     - `Home`: Página inicial do site.
     - `Projetos`: Página que detalha os projetos em andamento ou concluídos.
     - `Sobre`: Página sobre a ONG e suas missões.
